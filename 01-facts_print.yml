@@ -1,0 +1,13 @@
+---
+- name: Collect facts on IOS devices
+  hosts: cisco
+  gather_facts: false
+
+  tasks:
+    - name: Collecting facts
+      ios_facts:
+ 
+    
+    - name: print output
+      debug:
+        msg: Device {{ ansible_net_hostname }} is running on {{ ansible_net_version }}   

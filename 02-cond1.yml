@@ -1,0 +1,20 @@
+---
+    - name: conditionals ex3
+      hosts: cisco
+      gather_facts: False
+      tasks:
+        - ios_facts:
+          register: device_facts
+        - debug:
+            msg: device_facts.stdout_lines
+  
+        - debug:
+            msg: acceptible major version number
+          when: ansible_net_version.startswith("4")
+        - debug:
+            msg: management1 interface is up
+          when: ansible_net_interfaces["GigabitEthernet0"]["lineprotocol"] == "up"
+        - debug:
+            msg: "interface {{ item.key }} is up!"
+          when: item.value["lineprotocol"] == "up"
+          loop: "{{ ansible_net_interfaces | dict2items }}"

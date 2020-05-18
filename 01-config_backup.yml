@@ -1,0 +1,9 @@
+---
+- name: Backup running configs from IOS devices
+  hosts: cisco
+  gather_facts: false
+
+  tasks:
+    - name: Backup config
+      ios_config:
+        backup: yes

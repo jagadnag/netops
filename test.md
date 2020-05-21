@@ -10,5 +10,5 @@ for i in list:
 
 | Hostname       | Model     | OS Type     | Sw version     |
 | :------------- | :----------: | :-----------: |-----------: |
-|  CSR1000v-1 | CSR1000V | IOS-XE | 16.09.04 |
-
+|  CSR1000v-2 | CSR1000V | IOS-XE | 16.09.04 |
+|  CSR1000v-2 | CSR1000V | IOS-XE | 16.09.04 |

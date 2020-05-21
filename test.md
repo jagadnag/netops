@@ -8,7 +8,7 @@ for i in list:
     print(i)
 ``` 
 
-| Hostname       | Model     | OS Type     | Sw version     |
-| :------------- | :----------: | :-----------: |-----------: |
-|  CSR1000v-2 | CSR1000V | IOS-XE | 16.09.04 |
-|  CSR1000v-2 | CSR1000V | IOS-XE | 16.09.04 |
+| Hostname       | Model     | OS Type     | Serial No     | Sw version     |
+| :------------- | :----------: | :-----------: | :-----------: | -----------: |
+|  CSR1000v-2 | CSR1000V | IOS-XE | 9D0ZQUQAQR9 | 16.09.04 |
+|  CSR1000v-2 | CSR1000V | IOS-XE | 9D0ZQUQAQR9 | 16.09.04 |
